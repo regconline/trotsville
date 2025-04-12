@@ -1,5 +1,5 @@
 # Site Configuration
-baseURL = "/"
+baseURL = "https://regconline.github.io/trotsville/"
 languageCode = "en-za"
 title = "Trostsville Primary School"
 theme = ""
