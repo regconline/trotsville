@@ -1,0 +1,45 @@
+<section class="relative text-white py-16 md:py-24 overflow-hidden">
+    <!-- Gradient Background -->
+    <div class="absolute top-0 left-0 w-full h-full animate-gradient"></div>
+    
+    <!-- Animated background shapes -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+        <div class="absolute top-[10%] left-[5%] w-64 h-64 bg-white rounded-full mix-blend-overlay opacity-10"></div>
+        <div class="absolute bottom-[15%] right-[10%] w-80 h-80 bg-white rounded-full mix-blend-overlay opacity-10"></div>
+        <div class="absolute top-[40%] right-[20%] w-40 h-40 bg-white rounded-full mix-blend-overlay opacity-5"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="hero-text">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-md">Nurturing Minds, Building Futures</h1>
+                <p class="text-xl mb-8">Trostsville Primary School provides a comprehensive education for learners from Grade R to Grade 7 in a supportive and stimulating environment.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="/applications" class="btn btn-primary bg-white text-dark-blue hover:bg-gray-100">
+                        Apply Now
+                    </a>
+                    <a href="/contact" class="btn btn-outline border-white text-white hover:bg-white hover:text-dark-blue">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="relative rounded-lg overflow-hidden shadow-xl bg-white/10 backdrop-blur-sm p-4">
+                    <svg class="w-full h-auto" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="600" fill="url(#gradient)" />
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0F3460" stop-opacity="0.7" />
+                                <stop offset="100%" stop-color="#5089C6" stop-opacity="0.7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="400" cy="300" r="150" fill="#FFFFFF" opacity="0.15" />
+                        <path d="M400,150 L500,350 L300,350 Z" fill="#FFFFFF" opacity="0.25" />
+                        <text x="400" y="300" text-anchor="middle" font-family="Arial" font-size="30" fill="#FFFFFF">School Building Image</text>
+                        <text x="400" y="350" text-anchor="middle" font-family="Arial" font-size="15" fill="#FFFFFF">A place of learning and growth</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

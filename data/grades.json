@@ -1,0 +1,108 @@
+{
+  "grades": [
+    {
+      "level": "Grade R",
+      "age": "5-6 years",
+      "description": "Our Grade R program provides a play-based introduction to formal schooling, focusing on foundational skills development. Through structured play, children develop early literacy, numeracy, and social-emotional skills that prepare them for Grade 1.",
+      "key_focus": [
+        "Phonological awareness and letter recognition",
+        "Number concepts and counting",
+        "Fine and gross motor skill development",
+        "Social skills and classroom routines",
+        "Creative expression through art, music, and movement"
+      ],
+      "highlight": "Children explore learning through themed units that integrate all learning areas in an engaging, hands-on environment."
+    },
+    {
+      "level": "Grade 1",
+      "age": "6-7 years",
+      "description": "Grade 1 marks the transition to formal learning with a strong emphasis on literacy and numeracy foundations. Students begin reading, writing, and basic mathematical operations while continuing to develop through play-based activities.",
+      "key_focus": [
+        "Reading and writing development",
+        "Addition and subtraction fundamentals",
+        "Life skills and environmental awareness",
+        "Independent work habits",
+        "Continued development of fine motor skills"
+      ],
+      "highlight": "The reading journey begins in earnest with systematic phonics instruction and guided reading groups."
+    },
+    {
+      "level": "Grade 2",
+      "age": "7-8 years",
+      "description": "In Grade 2, students build on their foundational skills with more complex reading, writing, and mathematical concepts. There is an increased focus on comprehension, creative writing, and problem-solving.",
+      "key_focus": [
+        "Reading fluency and comprehension",
+        "Expanded vocabulary and sentence structure",
+        "Mathematical operations and problem-solving",
+        "Introduction to formal assessments",
+        "Personal and social responsibility"
+      ],
+      "highlight": "Students begin writing their own stories and solving more complex mathematical problems."
+    },
+    {
+      "level": "Grade 3",
+      "age": "8-9 years",
+      "description": "Grade 3 completes the Foundation Phase, consolidating literacy and numeracy skills in preparation for the Intermediate Phase. Students develop greater independence and critical thinking skills.",
+      "key_focus": [
+        "Reading comprehension and analysis",
+        "Extended writing in different genres",
+        "Multiplication, division, and fractions",
+        "Basic research skills",
+        "Collaborative project work"
+      ],
+      "highlight": "The culmination of Foundation Phase includes standardized assessments to ensure readiness for Grade 4."
+    },
+    {
+      "level": "Grade 4",
+      "age": "9-10 years",
+      "description": "Grade 4 marks the beginning of the Intermediate Phase, with a transition to subject-specific learning. Students encounter more complex content across subjects and develop stronger analytical skills.",
+      "key_focus": [
+        "Introduction to subject specialists",
+        "More complex text analysis",
+        "Advanced mathematical concepts",
+        "Natural sciences and social studies",
+        "Time management and organizational skills"
+      ],
+      "highlight": "Students begin using textbooks and specialized materials for different subjects."
+    },
+    {
+      "level": "Grade 5",
+      "age": "10-11 years",
+      "description": "In Grade 5, the curriculum expands with more detailed content in each subject area. Students develop stronger research skills and begin more substantive project work.",
+      "key_focus": [
+        "Literature study and response",
+        "Fractions, decimals, and percentages",
+        "Scientific investigation methods",
+        "Historical inquiry and geographical concepts",
+        "Technology integration across subjects"
+      ],
+      "highlight": "Project-based learning becomes more prominent, encouraging deeper exploration of topics."
+    },
+    {
+      "level": "Grade 6",
+      "age": "11-12 years",
+      "description": "Grade 6 continues building on subject knowledge with increased academic rigor. Students develop stronger critical thinking skills and begin to make connections between different subject areas.",
+      "key_focus": [
+        "Advanced reading and writing across genres",
+        "Algebraic thinking and geometry",
+        "Systems of the human body and earth sciences",
+        "Ancient civilizations and world geography",
+        "Digital literacy and online research"
+      ],
+      "highlight": "Interdisciplinary projects connect learning across different subject areas."
+    },
+    {
+      "level": "Grade 7",
+      "age": "12-13 years",
+      "description": "As the final year of primary school, Grade 7 prepares students for the transition to high school. The curriculum focuses on consolidating knowledge and developing the skills needed for future academic success.",
+      "key_focus": [
+        "Critical analysis of texts and media",
+        "Pre-algebra and advanced geometry",
+        "Laboratory experiments and scientific method",
+        "Independent research projects",
+        "Leadership and responsibility"
+      ],
+      "highlight": "Grade 7 culminates with a capstone project that demonstrates mastery of skills across subject areas."
+    }
+  ]
+}

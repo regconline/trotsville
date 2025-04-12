@@ -1,0 +1,77 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+    <header class="mb-10 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">{{ .Title }}</h1>
+        {{ with .Description }}
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ . }}</p>
+        {{ end }}
+    </header>
+    
+    <div class="prose lg:prose-xl max-w-3xl mx-auto mb-12">
+        {{ .Content }}
+    </div>
+    
+    <div class="max-w-6xl mx-auto">
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {{ range .Pages }}
+            <article class="bg-white rounded-lg shadow-md overflow-hidden blog-card">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <a href="{{ .Permalink }}" class="text-dark-blue hover:text-sky-blue transition duration-300">{{ .Title }}</a>
+                    </h2>
+                    <div class="flex items-center text-gray-500 text-sm mb-3">
+                        <span>{{ .Date.Format "January 2, 2006" }}</span>
+                        {{ with .Params.author }}
+                        <span class="mx-2">•</span>
+                        <span>{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    <p class="text-gray-600 mb-4">{{ .Description | default (substr .Summary 0 160) }}...</p>
+                    
+                    {{ with .Params.tags }}
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        {{ range . }}
+                        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="px-2 py-1 bg-gray-100 rounded-full text-gray-700 text-xs hover:bg-sky-blue hover:text-white transition duration-300">
+                            {{ . }}
+                        </a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    
+                    <a href="{{ .Permalink }}" class="inline-block text-sky-blue font-medium hover:underline">
+                        Read more →
+                    </a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        
+        <!-- Pagination -->
+        {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+        <div class="mt-12 flex justify-center">
+            <nav class="inline-flex rounded-md shadow">
+                {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.URL }}" class="px-4 py-2 text-sm font-medium bg-white text-gray-700 hover:bg-gray-50 rounded-l-md border border-gray-300">
+                    Previous
+                </a>
+                {{ else }}
+                <span class="px-4 py-2 text-sm font-medium bg-gray-100 text-gray-400 rounded-l-md border border-gray-300 cursor-not-allowed">
+                    Previous
+                </span>
+                {{ end }}
+                
+                {{ if .Paginator.HasNext }}
+                <a href="{{ .Paginator.Next.URL }}" class="px-4 py-2 text-sm font-medium bg-white text-gray-700 hover:bg-gray-50 rounded-r-md border border-gray-300 border-l-0">
+                    Next
+                </a>
+                {{ else }}
+                <span class="px-4 py-2 text-sm font-medium bg-gray-100 text-gray-400 rounded-r-md border border-gray-300 border-l-0 cursor-not-allowed">
+                    Next
+                </span>
+                {{ end }}
+            </nav>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,109 @@
+/* Trostsville Primary School Custom CSS */
+
+/* Brand Colors */
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+.border-dark-blue {
+  border-color: var(--dark-blue);
+}
+.hover\:bg-dark-blue:hover {
+  background-color: var(--dark-blue);
+}
+.hover\:text-dark-blue:hover {
+  color: var(--dark-blue);
+}
+
+.bg-sky-blue {
+  background-color: var(--sky-blue);
+}
+.text-sky-blue {
+  color: var(--sky-blue);
+}
+.border-sky-blue {
+  border-color: var(--sky-blue);
+}
+.hover\:bg-sky-blue:hover {
+  background-color: var(--sky-blue);
+}
+.hover\:text-sky-blue:hover {
+  color: var(--sky-blue);
+}
+
+/* Custom Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: var(--sky-blue);
+}
+
+.btn-secondary {
+  background-color: var(--sky-blue);
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  background-color: var(--dark-blue);
+}
+
+.btn-outline {
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+.btn-outline:hover {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+}
+
+/* Animations */
+.animate-gradient {
+  background: linear-gradient(-45deg, var(--dark-blue), var(--sky-blue), #3490dc, #6366f1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Form Styles */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease;
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--sky-blue);
+  box-shadow: 0 0 0 3px rgba(80, 137, 198, 0.2);
+}

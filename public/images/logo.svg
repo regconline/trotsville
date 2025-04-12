@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <style>
+    .primary { fill: #0F3460; }
+    .secondary { fill: #5089C6; }
+    .accent { fill: #6B7280; }
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+  </style>
+  
+  <!-- School Building Shape -->
+  <path class="primary" d="M10,80 L90,80 L90,40 L50,15 L10,40 Z" />
+  
+  <!-- Windows -->
+  <rect class="secondary" x="25" y="50" width="10" height="10" rx="1" />
+  <rect class="secondary" x="45" y="50" width="10" height="10" rx="1" />
+  <rect class="secondary" x="65" y="50" width="10" height="10" rx="1" />
+  
+  <!-- Door -->
+  <rect class="secondary" x="45" y="65" width="10" height="15" rx="1" />
+  
+  <!-- Roof Decoration -->
+  <circle class="accent" cx="50" cy="25" r="5" />
+  
+  <!-- Open Book -->
+  <path class="secondary" d="M40,95 L40,85 L50,90 L60,85 L60,95 L50,100 Z" />
+  
+  <!-- Text element for "TPS" -->
+  <text x="50" y="70" class="text" text-anchor="middle" fill="white" font-size="10">TPS</text>
+  
+  <!-- Est. 1981 Text -->
+  <text x="50" y="110" class="text" text-anchor="middle" fill="#0F3460" font-size="6">EST. 1981</text>
+</svg>

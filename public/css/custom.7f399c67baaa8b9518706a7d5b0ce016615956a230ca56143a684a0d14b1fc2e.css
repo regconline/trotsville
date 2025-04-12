@@ -1,0 +1,115 @@
+/* Custom CSS styles for Trostsville Primary School */
+
+:root {
+  --color-dark-blue: #0F3460;
+  --color-sky-blue: #5089C6;
+  --color-gray: #6B7280;
+}
+
+/* Smooth animations */
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+  0% { transform: translateX(-50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.scale-in {
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Button hover animations */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for staff cards */
+.staff-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section animation */
+.hero-text {
+  animation: fadeIn 1s ease-out, slideInLeft 1s ease-out;
+}
+
+.hero-image {
+  animation: fadeIn 1.5s ease-out, slideInRight 1s ease-out;
+}
+
+/* Grade card animations */
+.grade-card {
+  transition: all 0.3s ease;
+}
+
+.grade-card:hover {
+  transform: scale(1.03);
+}
+
+/* Apply scroll animation for sections */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom form styling */
+.form-control:focus {
+  border-color: var(--color-sky-blue);
+  box-shadow: 0 0 0 0.25rem rgba(80, 137, 198, 0.25);
+}
+
+/* Blog post card styling */
+.blog-card {
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Accessibility focus styles */
+*:focus {
+  outline: 3px solid var(--color-sky-blue);
+  outline-offset: 2px;
+}

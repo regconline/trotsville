@@ -1,0 +1,149 @@
+{{ define "main" }}
+<!-- Hero Section -->
+{{ partial "hero.html" . }}
+
+<!-- Welcome Section -->
+<section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Welcome to Trostsville Primary School</h2>
+            <p class="text-xl text-gray-600 mb-10">Established in 1981, Trostsville Primary School has been providing quality education for over 40 years. Located in Wolmaransstad, we are dedicated to nurturing young minds and fostering a love for learning.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/applications" class="px-6 py-3 bg-dark-blue text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors duration-300">
+                    Apply Now
+                </a>
+                <a href="/about" class="px-6 py-3 bg-white text-dark-blue font-semibold rounded-md border-2 border-dark-blue hover:bg-gray-50 transition-colors duration-300">
+                    Learn More
+                </a>
+                <a href="/donate" class="px-6 py-3 bg-sky-blue text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors duration-300">
+                    Donate
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="scroll-animation">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Vision</h2>
+                <p class="text-lg text-gray-600 mb-8">To be a center of academic excellence that develops well-rounded individuals who will make a positive contribution to society.</p>
+                
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
+                <ul class="text-lg text-gray-600 space-y-4">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-sky-blue mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Providing a supportive and stimulating learning environment
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-sky-blue mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Developing each child's intellectual, physical, emotional, and social potential
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-sky-blue mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Promoting values of respect, responsibility, and resilience
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-sky-blue mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Fostering partnerships between the school, parents, and the wider community
+                    </li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4 scroll-animation">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-sky-blue mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Academic Excellence</h3>
+                    <p class="text-gray-600">Rigorous curriculum that challenges and inspires students.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-sky-blue mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Global Perspective</h3>
+                    <p class="text-gray-600">Preparing students to thrive in a diverse and changing world.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-sky-blue mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Character Development</h3>
+                    <p class="text-gray-600">Building strong ethical foundations and personal values.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-sky-blue mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Holistic Growth</h3>
+                    <p class="text-gray-600">Balanced development of academic, physical, and creative abilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News & Events -->
+<section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Latest News & Events</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            {{ range first 3 (where .Site.RegularPages "Type" "blog") }}
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 blog-card">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="{{ .Permalink }}" class="text-dark-blue hover:text-sky-blue transition duration-300">{{ .Title }}</a>
+                    </h3>
+                    <div class="flex items-center text-gray-500 text-sm mb-3">
+                        <span>{{ .Date.Format "January 2, 2006" }}</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">{{ .Description | default (substr .Summary 0 120) }}...</p>
+                    <a href="{{ .Permalink }}" class="inline-block text-sky-blue font-medium hover:underline">
+                        Read more →
+                    </a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        <div class="text-center mt-10">
+            <a href="/blog" class="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300 transition-colors duration-300">
+                View All Posts
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-dark-blue text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Join Our School Community</h2>
+        <p class="text-xl mb-10 max-w-3xl mx-auto">Experience the difference at Trostsville Primary School. We invite you to be part of our journey as we strive for excellence in education.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="/applications" class="px-8 py-3 bg-white text-dark-blue font-semibold rounded-md hover:bg-gray-100 transition-colors duration-300">
+                Apply Today
+            </a>
+            <a href="/contact" class="px-8 py-3 bg-sky-blue text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors duration-300">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,63 @@
+{{ define "main" }}
+<article class="container mx-auto px-4 py-8">
+    <header class="mb-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{{ .Title }}</h1>
+        {{ if eq .Type "blog" }}
+        <div class="flex items-center text-gray-600 mb-6">
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+            {{ with .Params.author }}
+            <span class="mx-2">•</span>
+            <span>{{ . }}</span>
+            {{ end }}
+            {{ with .Params.categories }}
+            <span class="mx-2">•</span>
+            <span>
+                {{ range $index, $category := . }}
+                    {{ if $index }}, {{ end }}
+                    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="text-sky-blue hover:underline">{{ . }}</a>
+                {{ end }}
+            </span>
+            {{ end }}
+        </div>
+        {{ end }}
+    </header>
+    
+    <div class="prose lg:prose-xl max-w-none">
+        {{ .Content }}
+    </div>
+    
+    {{ if eq .Type "blog" }}
+    <footer class="mt-10 pt-6 border-t border-gray-200">
+        {{ with .Params.tags }}
+        <div class="flex flex-wrap gap-2">
+            <span class="text-gray-700 font-medium">Tags:</span>
+            {{ range . }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="px-3 py-1 bg-gray-200 rounded-full text-gray-700 text-sm hover:bg-sky-blue hover:text-white transition duration-300">
+                {{ . }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+        
+        <div class="mt-8">
+            <h3 class="text-lg font-semibold mb-4">Related Posts</h3>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {{ $related := .Site.RegularPages.Related . | first 3 }}
+                {{ with $related }}
+                    {{ range . }}
+                    <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <h4 class="font-medium mb-2">
+                            <a href="{{ .RelPermalink }}" class="text-dark-blue hover:text-sky-blue">{{ .Title }}</a>
+                        </h4>
+                        <div class="text-sm text-gray-500">{{ .Date.Format "Jan 2, 2006" }}</div>
+                    </div>
+                    {{ end }}
+                {{ else }}
+                    <p class="text-gray-600">No related posts found.</p>
+                {{ end }}
+            </div>
+        </div>
+    </footer>
+    {{ end }}
+</article>
+{{ end }}

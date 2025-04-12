@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+    <header class="mb-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{{ .Title }}</h1>
+        {{ with .Description }}
+            <p class="text-xl text-gray-600">{{ . }}</p>
+        {{ end }}
+    </header>
+    
+    <div class="prose lg:prose-xl max-w-none">
+        {{ .Content }}
+    </div>
+    
+    {{ if eq .Type "blog" }}
+    <div class="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {{ range .Pages }}
+        <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 blog-card">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">
+                    <a href="{{ .Permalink }}" class="text-dark-blue hover:text-sky-blue">{{ .Title }}</a>
+                </h2>
+                <div class="flex items-center text-gray-500 text-sm mb-3">
+                    <span>{{ .Date.Format "January 2, 2006" }}</span>
+                    {{ with .Params.author }}
+                    <span class="mx-2">•</span>
+                    <span>{{ . }}</span>
+                    {{ end }}
+                </div>
+                <p class="text-gray-600 mb-4">{{ .Description | default (substr .Summary 0 120) }}...</p>
+                <a href="{{ .Permalink }}" class="inline-block text-sky-blue font-medium hover:underline">
+                    Read more →
+                </a>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+    {{ else }}
+    <div class="mt-10">
+        {{ range .Pages }}
+        <article class="mb-10 pb-10 border-b border-gray-200">
+            <h2 class="text-2xl font-bold mb-2">
+                <a href="{{ .Permalink }}" class="text-dark-blue hover:text-sky-blue">{{ .Title }}</a>
+            </h2>
+            {{ with .Description }}
+                <p class="text-gray-600 mb-4">{{ . }}</p>
+            {{ end }}
+            <a href="{{ .Permalink }}" class="inline-block text-sky-blue font-medium hover:underline">
+                Read more →
+            </a>
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}

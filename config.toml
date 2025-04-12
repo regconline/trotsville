@@ -1,0 +1,74 @@
+# Site Configuration
+baseURL = "/"
+languageCode = "en-za"
+title = "Trostsville Primary School"
+theme = ""
+enableRobotsTXT = true
+
+# Build settings
+[build]
+  writeStats = true
+
+# Menu Configuration
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Grades"
+    url = "/grades/"
+    weight = 3
+  [[menu.main]]
+    name = "Applications"
+    url = "/applications/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+  [[menu.main]]
+    name = "Donate"
+    url = "/donate/"
+    weight = 6
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 7
+
+# Parameters
+[params]
+  description = "Trostsville Primary School - Striving for Excellence since 1981."
+  author = "Trostsville Primary School"
+  establishedDate = "1981-01-01"
+  phone = "072 724 0600"
+  email = "trotsvilleprimaryschool@gmail.com"
+  address = "4 Cnr Steytler and Sesinyi Street, Wolmaransstad, 2630"
+  motto = "Striving for Excellence"
+  
+  # Social Media
+  facebook = ""
+  twitter = ""
+  instagram = ""
+  
+  # School Colors
+  [params.colors]
+    darkBlue = "#0F3460"
+    skyBlue = "#5089C6"
+    gray = "#6B7280"
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Sitemap Configuration
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

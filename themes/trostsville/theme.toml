@@ -1,0 +1,25 @@
+name = "Trostsville"
+license = "MIT"
+licenselink = "https://github.com/yourusername/hugo-trostsville-theme/blob/master/LICENSE"
+description = "A modern, elegant theme for Trostsville Primary School"
+homepage = "https://www.trotsvilleprimaryschool.co.za/"
+tags = ["school", "education", "responsive", "modern", "tailwind"]
+features = ["responsive", "blog", "contact form", "staff directory"]
+min_version = "0.80.0"
+
+[author]
+  name = "Trostsville Primary School"
+  homepage = "https://www.trotsvilleprimaryschool.co.za/"
+
+[module]
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
+[[module.mounts]]
+  source = "static"
+  target = "static"

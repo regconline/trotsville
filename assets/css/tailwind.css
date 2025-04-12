@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-800 font-sans;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl font-bold text-dark-blue;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl font-semibold text-dark-blue;
+  }
+  h3 {
+    @apply text-xl md:text-2xl font-semibold text-dark-blue;
+  }
+  a {
+    @apply text-sky-blue hover:text-dark-blue transition duration-300;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded-md font-medium transition duration-300 inline-block;
+  }
+  .btn-primary {
+    @apply bg-dark-blue text-white hover:bg-sky-blue;
+  }
+  .btn-secondary {
+    @apply bg-sky-blue text-white hover:bg-dark-blue;
+  }
+  .btn-outline {
+    @apply border border-dark-blue text-dark-blue hover:bg-dark-blue hover:text-white;
+  }
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+  .form-input {
+    @apply rounded-md border-gray-300 focus:border-sky-blue focus:ring focus:ring-sky-blue focus:ring-opacity-50;
+  }
+}
+
+/* Custom animations */
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

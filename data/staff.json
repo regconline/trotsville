@@ -1,0 +1,143 @@
+{
+  "leadership": [
+    {
+      "name": "Dr. Elizabeth Khumalo",
+      "position": "Principal",
+      "qualifications": "PhD in Educational Leadership, M.Ed, B.Ed",
+      "bio": "Dr. Khumalo has been the principal of Trostsville Primary School since 2015. With over 20 years in education, she is dedicated to fostering a culture of excellence and innovation.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. James van der Merwe",
+      "position": "Deputy Principal",
+      "qualifications": "M.Ed, B.Ed, Diploma in School Management",
+      "bio": "Mr. van der Merwe oversees curriculum development and teacher support. He has been with the school for 15 years and specializes in mathematics education.",
+      "photo": "placeholder-male"
+    },
+    {
+      "name": "Mrs. Nomsa Ndlovu",
+      "position": "Head of Department: Foundation Phase",
+      "qualifications": "B.Ed, Specialized Certificate in Early Childhood Development",
+      "bio": "Mrs. Ndlovu brings 18 years of teaching experience to her role leading our Foundation Phase department, focusing on early literacy and numeracy development.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. David Molefe",
+      "position": "Head of Department: Intermediate/Senior Phase",
+      "qualifications": "M.Ed, B.Sc, PGCE",
+      "bio": "Mr. Molefe leads our Intermediate and Senior Phase programs, bringing expertise in science education and curriculum integration across subjects.",
+      "photo": "placeholder-male"
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Ms. Sarah Thompson",
+      "position": "Grade R Teacher",
+      "qualifications": "B.Ed in Early Childhood Education",
+      "bio": "Ms. Thompson creates a nurturing environment where our youngest learners develop foundational skills through play-based learning.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mrs. Fatima Ismail",
+      "position": "Grade 1 Teacher",
+      "qualifications": "B.Ed, Diploma in Remedial Education",
+      "bio": "Mrs. Ismail specializes in early literacy development and differentiated instruction to support diverse learning needs.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. Thabo Mbeki",
+      "position": "Grade 2 Teacher",
+      "qualifications": "B.Ed, Certificate in Inclusive Education",
+      "bio": "Mr. Mbeki employs innovative teaching strategies to develop strong numeracy and literacy foundations in Grade 2 learners.",
+      "photo": "placeholder-male"
+    },
+    {
+      "name": "Ms. Lerato Dlamini",
+      "position": "Grade 3 Teacher",
+      "qualifications": "B.Ed, Specialized Certificate in Literacy Development",
+      "bio": "Ms. Dlamini prepares learners for the transition to Intermediate Phase by strengthening independent learning skills.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. André Pretorius",
+      "position": "Grade 4 Teacher, Mathematics Specialist",
+      "qualifications": "B.Sc, PGCE, Certificate in Mathematics Education",
+      "bio": "Mr. Pretorius makes mathematics accessible and engaging through practical applications and problem-solving activities.",
+      "photo": "placeholder-male"
+    },
+    {
+      "name": "Ms. Patricia Naidoo",
+      "position": "Grade 5 Teacher, Language Specialist",
+      "qualifications": "B.A. in Languages, PGCE",
+      "bio": "Ms. Naidoo fosters a love for language and literature, encouraging critical thinking and creative expression.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. John Simelane",
+      "position": "Grade 6 Teacher, Natural Sciences Specialist",
+      "qualifications": "B.Sc, PGCE, Advanced Certificate in Science Education",
+      "bio": "Mr. Simelane inspires scientific curiosity through hands-on experiments and inquiry-based learning approaches.",
+      "photo": "placeholder-male"
+    },
+    {
+      "name": "Mrs. Charmaine Botha",
+      "position": "Grade 7 Teacher, Social Sciences Specialist",
+      "qualifications": "B.A. in History, PGCE, M.Ed",
+      "bio": "Mrs. Botha prepares learners for high school by developing research skills and critical analysis of historical and geographical concepts.",
+      "photo": "placeholder-female"
+    }
+  ],
+  "support": [
+    {
+      "name": "Mrs. Gloria Zwane",
+      "position": "School Counselor",
+      "qualifications": "M.A. in Educational Psychology, B.Psych",
+      "bio": "Mrs. Zwane supports the social-emotional well-being of our learners through individual counseling and group programs.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. Peter Nkosi",
+      "position": "Sports Coordinator",
+      "qualifications": "B.Ed in Physical Education, Sports Coaching Certificates",
+      "bio": "Mr. Nkosi oversees our comprehensive sports program, developing physical skills and promoting healthy competition.",
+      "photo": "placeholder-male"
+    },
+    {
+      "name": "Ms. Joyce Mthembu",
+      "position": "Librarian and Media Specialist",
+      "qualifications": "B.Info Science, Certificate in Educational Technology",
+      "bio": "Ms. Mthembu manages our library resources and supports digital literacy development across all grades.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. Francois du Plessis",
+      "position": "IT Coordinator",
+      "qualifications": "B.Sc in Computer Science, Certificate in Educational Technology",
+      "bio": "Mr. du Plessis ensures that technology enhances learning experiences across our curriculum.",
+      "photo": "placeholder-male"
+    }
+  ],
+  "administrative": [
+    {
+      "name": "Mrs. Busi Mohale",
+      "position": "School Administrator",
+      "qualifications": "Diploma in Office Administration, Certificate in School Management",
+      "bio": "Mrs. Mohale efficiently manages the school office, serving as the first point of contact for parents and visitors.",
+      "photo": "placeholder-female"
+    },
+    {
+      "name": "Mr. Willem Jansen",
+      "position": "Finance Officer",
+      "qualifications": "B.Com, Certificate in School Financial Management",
+      "bio": "Mr. Jansen oversees the school's financial operations, ensuring responsible management of resources.",
+      "photo": "placeholder-male"
+    },
+    {
+      "name": "Ms. Thembi Mahlangu",
+      "position": "Admissions Coordinator",
+      "qualifications": "B.A., Certificate in Public Relations",
+      "bio": "Ms. Mahlangu guides families through the application and enrollment process with care and efficiency.",
+      "photo": "placeholder-female"
+    }
+  ]
+}
